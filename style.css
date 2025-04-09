@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    
+    width: 350px;
+    padding: 30px 15px 15px 15px;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background-color: #d6d6d6;
+}
+
+input[ type="text"] {
+
+    font-family: sans-serif;
+    width: 100%;
+    font-size: 36px;
+    padding: 5px;
+    height: 70px;
+    background-color:rgb(241, 241, 241) ;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+
+hr {
+
+    margin: 15px 0;
+    background-color: silver;
+}
+form .onOffBtn {
+     
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+form .onOffBtn input {
+
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10%;
+    background-color: red;
+    box-shadow: 2px 2px 8px rgb(136, 129, 129 ), inset -2px -2px 6px black;
+    cursor: pointer;
+    color: #fff;
+}
+
+form .onOffBtn .onBtn {
+
+    background-color: blue;
+}
+
+form .onOffBtn .offBtn:active {
+
+    font-size: 13px;
+} 
+.onOffBtn .onBtn:active,
+.onOffBtn .offBtn:active {
+
+    box-shadow: inset 2px 2px 8px rgb(0, 0, 0), inset -2px -2px 6px rgb(0, 0, 0);
+} 
+
+form .numOpBtn {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+form .numOpBtn input {
+
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+form .numOpBtn input:hover {
+
+    color: rgb(241, 164, 21);
+}
+form .numOpBtn .op-button {
+
+    background-color: rgba(10, 41, 10, 0.7);
+}
+
+form .numOpBtn .clear-button {
+
+    background-color: #690505;
+}
+
+form .numOpBtn .blueBtn {
+
+    background-color: #01012e;
+}
